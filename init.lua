@@ -36,7 +36,6 @@ function obj:init()
 
             if event:getKeyCode() == 62 and not self.ctrlPressed and self.onlyCtrlPressed then
                 hs.eventtap.event.newKeyEvent(hs.keycodes.map.escape, true):post()
-                hs.keycodes.setLayout("ABC")
             end
 
             if not self.ctrlPressed then
